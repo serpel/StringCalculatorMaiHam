@@ -11,9 +11,10 @@ namespace StringCalculatorMaaiHam.UnitTest
         }
 
         [Test]
-        public void Test1()
+        public void OnStringEmptyShouldReturnZero()
         {
-            Assert.Pass();
+            var result = StringCalculator.Add("");
+            Assert.AreEqual(0, result);
         }
     }
 }
