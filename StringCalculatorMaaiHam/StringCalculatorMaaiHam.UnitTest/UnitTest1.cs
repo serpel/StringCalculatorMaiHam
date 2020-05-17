@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace StringCalculatorMaaiHam.UnitTest
@@ -29,6 +30,21 @@ namespace StringCalculatorMaaiHam.UnitTest
         {
             var result = StringCalculator.Add("5,6");
             Assert.AreEqual(11, result);
+        }
+        
+        [Test]
+        public void OnInValidDelimterShouldReturnNegative()
+        {
+            var result = StringCalculator.Add("5,6*3");
+            Assert.AreEqual(-1, result);
+        }
+        
+          
+        [Test]
+        public void OnNegativeNumberShouldReturnException()
+        {
+            Assert.Throws(Is.TypeOf<Exception>().And.Message.Contains("Negatives not allowed"),
+                () => StringCalculator.Add("-1,2"));
         }
     }
 }

@@ -6,16 +6,20 @@ namespace StringCalculatorMaaiHam
 {
     public static class StringCalculator
     {
+        private static readonly char[] AllowedDelimiters = {';', '.', ','};
         public static int Add(string numbers)
         {
             if (string.IsNullOrEmpty(numbers)) return 0;
+
+            var isAllowed = AllowedDelimiters.Any(a => !numbers.Contains(a));
+            if (isAllowed) return -1;
+            
             var numbersStringList = numbers.Split(",").ToList();
-            var total = 0;
-            foreach(var stringNumber in numbersStringList)
-            {
-                 total += int.Parse(stringNumber);
-            }
-            return total;
+
+            var numberList = numbersStringList
+                .Select(number => int.Parse(number));
+            
+            return numberList.Sum();
         }
     }
 }
