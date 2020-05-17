@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorMaaiHam", "StringCalculatorMaaiHam\StringCalculatorMaaiHam.csproj", "{242ECA95-E0A1-4116-B09C-2C918B3814FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorMaaiHam.UnitTest", "StringCalculatorMaaiHam.UnitTest\StringCalculatorMaaiHam.UnitTest.csproj", "{D792244B-250E-4BE1-8627-BEC3392382DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorMaaiHam.UnitTest", "StringCalculatorMaaiHam.UnitTest\StringCalculatorMaaiHam.UnitTest.csproj", "{821C7407-B893-49B3-8950-389E637E7C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{242ECA95-E0A1-4116-B09C-2C918B3814FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{242ECA95-E0A1-4116-B09C-2C918B3814FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{242ECA95-E0A1-4116-B09C-2C918B3814FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D792244B-250E-4BE1-8627-BEC3392382DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D792244B-250E-4BE1-8627-BEC3392382DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D792244B-250E-4BE1-8627-BEC3392382DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D792244B-250E-4BE1-8627-BEC3392382DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821C7407-B893-49B3-8950-389E637E7C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821C7407-B893-49B3-8950-389E637E7C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821C7407-B893-49B3-8950-389E637E7C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821C7407-B893-49B3-8950-389E637E7C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
