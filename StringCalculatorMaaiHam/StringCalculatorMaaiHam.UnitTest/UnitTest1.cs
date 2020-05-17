@@ -21,8 +21,8 @@ namespace StringCalculatorMaaiHam.UnitTest
         [Test]
         public void OnSingleNumberShouldSameNumber()
         {
-            var result = StringCalculator.Add("5");
-            Assert.AreEqual(5, result);
+            var result = StringCalculator.Add("15");
+            Assert.AreEqual(15, result);
         }
 
         [Test]

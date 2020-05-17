@@ -10,8 +10,10 @@ namespace StringCalculatorMaaiHam
         public static int Add(string numbers)
         {
             if (string.IsNullOrEmpty(numbers)) return 0;
-            
-            if (numbers.Length <= 1) return int.Parse(numbers);
+            var singleNumber = 0;
+            int.TryParse(numbers, out singleNumber);
+            if (singleNumber != 0)
+                return singleNumber;
 
             var isAllowed = AllowedDelimiters.Any(a => numbers.Contains(a));
             if (!isAllowed) return -1;
