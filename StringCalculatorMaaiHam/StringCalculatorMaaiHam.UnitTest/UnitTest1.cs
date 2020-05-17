@@ -35,7 +35,7 @@ namespace StringCalculatorMaaiHam.UnitTest
         [Test]
         public void OnInValidDelimterShouldReturnNegative()
         {
-            var result = StringCalculator.Add("5,6*3");
+            var result = StringCalculator.Add("5*6*3");
             Assert.AreEqual(-1, result);
         }
         
@@ -43,8 +43,9 @@ namespace StringCalculatorMaaiHam.UnitTest
         [Test]
         public void OnNegativeNumberShouldReturnException()
         {
-            Assert.Throws(Is.TypeOf<Exception>().And.Message.Contains("Negatives not allowed"),
-                () => StringCalculator.Add("-1,2"));
+            Assert.Throws(Is.TypeOf<Exception>()
+                    .And.Message.Contains("Negatives not allowed"),
+                () => StringCalculator.Add("1,-2"));
         }
     }
 }
